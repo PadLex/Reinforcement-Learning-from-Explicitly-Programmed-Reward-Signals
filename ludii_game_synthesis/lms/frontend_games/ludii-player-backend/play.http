@@ -1,0 +1,29 @@
+###
+
+# Start the game and capture gameId
+POST http://localhost:3001/start-game
+Content-Type: application/json
+
+{
+    "width": 1000,
+    "height": 1000,
+    "game": "(game \"Tic-Tac-Toe\" (players 2) (equipment {(board (square 3)) (piece \"Disc\" P1) (piece \"Cross\" P2)}) (rules (play (move Add (to (sites Empty)))) (end (if (is Line 3) (result Mover Win)))))"
+}
+
+> {%
+    client.global.set("gameId", response.body.gameId);
+%}
+
+###
+
+### Send click using the gameId from the first request
+POST http://localhost:3001/click
+Content-Type: application/json
+
+{
+    "gameId": "{{gameId}}",
+    "x": 100,
+    "y": 100
+}
+
+###

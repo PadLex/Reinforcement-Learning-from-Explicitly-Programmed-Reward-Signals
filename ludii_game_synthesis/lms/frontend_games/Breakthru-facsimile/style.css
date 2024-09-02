@@ -1,0 +1,16 @@
+#chess-board-container {
+    width: 80vw; /* Adjust based on desired width relative to viewport width */
+    height: 80vw; /* Making height equal to width for a square aspect ratio */
+    max-width: 600px; /* Maximum size */
+    max-height: 600px; /* Maximum size, keeping aspect ratio square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Center the container */
+}
+
+#chess-board {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}

@@ -1,0 +1,41 @@
+(game "GAME_NAME" 
+    (players 2)
+
+    (equipment {
+            (board (square 5))
+            (piece "PIECE_ALPHA" P1)
+            (piece "PIECE_BETA" P2)
+            (hand P1)
+    })
+
+    (rules 
+        (play 
+            (move Add 
+                (to (sites Empty) if:(= 0 (state at:
+                            (to)
+                )))
+                (then (if (is Line 3) (forEach Site 
+                            (expand origin:
+                                (last To)
+                            steps:2)
+                            (set State at:
+                                (site)
+                            1)
+                )))
+            )
+        )
+
+        (end 
+            (if (no Moves Next) (result Mover Win) )
+        )
+    )
+)
+
+// Ancestor: Notakto
+// Selection metric: 0.36
+// Fitness: 0.95
+// Novelty: 0.45
+// Cell distance: 3.00
+// Edit Distance: 0.38
+// Global Edit Distance: 0.38
+// Lineage length: 4.00
