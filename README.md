@@ -7,7 +7,7 @@ The code in this repository is provided for reproducibility, as well as serving 
 The modifications we made to TRL are available in [our fork](https://github.com/PadLex/trl) of the repository.
 
 ## Installation
-The following instructions have been tested on Lambda instances with A100s or A5000s. Some dependencies are quite fragile and may not work on other systems. For example, TRL is not compatible with any system with an H100.
+The following instructions have been tested on Lambda instances with A100s or A5000s. Some dependencies are quite fragile and may not work on other systems. For example, at the time of writing, TRL is not compatible with any system with an H100.
 
 Clone the repository and navigate to the root directory of the project:
 ```bash
