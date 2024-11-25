@@ -1,6 +1,6 @@
 # Exploring RL-based LLM Training for Formal Language Tasks with Programmed Rewards
 
-This repository contains the code for the paper "Exploring RL-based LLM Training for Formal Language Tasks with Programmed Rewards" by Alexander G. Padula and Dennis J.N.J. Soemers. The paper was excepted to [BNAIC 2024](https://bnaic2024.sites.uu.nl).
+This repository contains the code for the paper "[Exploring RL-based LLM Training for Formal Language Tasks with Programmed Rewards](https://arxiv.org/abs/2410.17126)" by Alexander G. Padula and Dennis J.N.J. Soemers. The paper was excepted to [BNAIC 2024](https://bnaic2024.sites.uu.nl).
 
 The code in this repository is provided for reproducibility, as well as serving as a reference for using [TRL](https://github.com/huggingface/trl) with external reward functions and for interfacing with the Ludii game-playing environment. It is not intended to be a package for general use, but rather a collection of scripts and notebooks that can be used to reproduce the experiments in the paper.
 
